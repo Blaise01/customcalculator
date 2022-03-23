@@ -9,7 +9,8 @@ body {
     justify-content: center;
     align-items: center;
     background: url(bg.jpg);
-    background-size: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
     overflow: hidden;
     user-select: none;
 }
@@ -123,11 +124,11 @@ a {
     animation: loader 1.2s ease-in-out infinite alternate;
   }
   
-  @keyframes loader {
-     from {transform: rotate(0deg);}
-     to {transform: rotate(720deg);}
-  }
-  @-webkit-keyframes loader {
-     from {-webkit-transform: rotate(0deg);}
-     to {-webkit-transform: rotate(720deg);}
-  }
+@keyframes loader {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(720deg);}
+}
+@-webkit-keyframes loader {
+    from {-webkit-transform: rotate(0deg);}
+    to {-webkit-transform: rotate(720deg);}
+}
